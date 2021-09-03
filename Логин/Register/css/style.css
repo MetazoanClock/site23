@@ -1,0 +1,440 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol,
+li,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 2;
+}
+
+textarea:focus,
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.ttf?20rdog") format("truetype"), url("../fonts/icons.woff?20rdog") format("woff"), url("../fonts/icons.svg?20rdog#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=_icon-]::before,
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-copyActive .path1:before {
+  content: "";
+  color: #005ff9;
+}
+
+._icon-copyActive .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: white;
+}
+
+._icon-copy:before {
+  content: "";
+  color: #fff;
+}
+
+._icon-paid:before {
+  content: "";
+  color: #8d79c8;
+}
+
+._icon-panel:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-personal:before {
+  content: "";
+  color: #60d0a8;
+}
+
+._icon-remortgaging:before {
+  content: "";
+  color: #ddba5f;
+}
+
+._icon-reports:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-resource:before {
+  content: "";
+  color: #538ec7;
+}
+
+._icon-search:before {
+  content: "";
+}
+
+._icon-settings:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-star:before {
+  content: "";
+  color: #57c262;
+}
+
+._icon-up:before {
+  content: "";
+  color: #888;
+}
+
+._icon-Vector:before {
+  content: "";
+  color: #5ec6f2;
+}
+
+._icon-warehouse:before {
+  content: "";
+  color: #ff7a00;
+}
+
+._icon-warehouses:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-white__theme:before {
+  content: "";
+  color: #fff;
+}
+
+._icon-additionally:before {
+  content: "";
+}
+
+._icon-arrow:before {
+  content: "";
+}
+
+._icon-arrow__next:before {
+  content: "";
+  color: #888;
+}
+
+._icon-arrow__prev:before {
+  content: "";
+  color: #888;
+}
+
+._icon-calendar:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-center__warehouse:before {
+  content: "";
+  color: #8f00ff;
+}
+
+._icon-courier:before {
+  content: "";
+  color: #03a3e8;
+}
+
+._icon-dark__theme:before {
+  content: "";
+  color: #fff;
+}
+
+._icon-date:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-delivered:before {
+  content: "";
+  color: #6dcf88;
+}
+
+._icon-delivery:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-expectation:before {
+  content: "";
+  color: #c4c4c4;
+}
+
+._icon-fine:before {
+  content: "";
+  color: #de3a3a;
+}
+
+._icon-gold:before {
+  content: "";
+  color: gold;
+}
+
+._icon-inDelivery:before {
+  content: "";
+  color: #6cc9dd;
+}
+
+._icon-logistician:before {
+  content: "";
+}
+
+._icon-operator:before {
+  content: "";
+  color: #2fd335;
+}
+
+._icon-orders:before {
+  content: "";
+  color: #336cfb;
+}
+
+._icon-add:before {
+  content: "";
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #131313;
+  font-family: "Open Sans";
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #D8D8D8;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #949494;
+}
+
+body:-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #D8D8D8;
+}
+
+.wrapper {
+  min-width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wrapper .main .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.wrapper .main .login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .main .login form .password {
+  position: relative;
+}
+
+.wrapper .main .login form .password-control {
+  position: absolute;
+  top: 24%;
+  right: 20px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/view.png) center no-repeat;
+  background-size: cover;
+}
+
+.wrapper .main .login form .password-control.view {
+  background: url(../img/no-view.png) center no-repeat;
+  background-size: cover;
+}
+
+.wrapper .main .login form input[type=password] {
+  font: large Verdana, sans-serif;
+  color: grey;
+}
+
+.wrapper .main .login form input {
+  font: large Verdana, sans-serif;
+  border-radius: 5px;
+  padding: 15px;
+  height: 100%;
+  background-color: #fff;
+  border: #ececec;
+  margin: 0 5px;
+}
+
+.wrapper .main .login form .login-btn {
+  cursor: pointer;
+  background-color: #336cfb;
+  border: none;
+  border-radius: 10px;
+  margin: 0 5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.wrapper .main .login form .login-btn:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #1E51D2;
+}
+
+.webp .wrapper .main .login form .password-control{ background: url(../img/view.webp) center no-repeat; }
+
+.webp .wrapper .main .login form .password-control.view{ background: url(../img/no-view.webp) center no-repeat; }
